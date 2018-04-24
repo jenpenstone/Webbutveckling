@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="sv">
+
+	<head>
+		<!--Vilken teckenkodning som används-->
+		<meta charset="utf-8">
+		<!--Namn på sidan vilken syns i webbläsaren-->
+		<title> Webbtekniker - Jennys hörna </title>
+		<!--Länk till den stilmall i css som talar om hur innehållet ska formateras och presenteras. -->
+		<link rel="stylesheet" type="text/css" href="../stil.css" />
+		<style>
+			#webbtekniker{
+				color: #D3C321;
+			}
+			#css{
+				color: #D3C321;
+			}
+		</style>
+	</head>
+
+	<!--Innehåller alla element som syns i webbläsaren. -->
+	<body>
+
+		<div id="container">
+
+			<div id="header">
+
+				<h1> Jennys hörna </h1>
+
+				<div id="top_navigation">
+
+					<!--Lista med länkar till webbsidans olika avsnitt. När man håller musen över länken visas en informerande text. -->
+					<ul>
+						<li class="top">
+							<a  id="startsida" href="../index.html" title="Klicka här för att komma till startsidan!">Startsida</a>
+						</li>
+
+						<li class="top">
+							<a id="om_mig" href="../mig/om_mig.html" title="Klicka här för att komma till information om mig!">Om mig</a>
+						</li>
+
+						<li class="top">
+							<a id="internets_historia" href="../internet/internet_born.html" title="Klicka här för att komma till Internets historia!">Internets historia</a>
+						</li>
+
+						<li class="top">
+							<a id="webbtekniker" href="webbtekniker.html" title="Klicka här för att komma till Webbtekniker!">Webbtekniker</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+			<!--Slut på header-->
+
+			<div id="middle_wrapper">
+
+				<div id="side_navigation">
+					<!--Lista med länkar till kategorins olika avsnitt. När man håller musen över länken visas en informerande text. -->
+
+
+					<ul>
+						<li class="side">
+							<a id="html" class="side" href="webbtekniker.html" title="Klicka här för att komma till information om HTML!">HTML</a>
+						</li>
+
+						<li class="side">
+							<a id="css" class="side" href="css.html" title="Klicka här för att komma till information om CSS!">CSS</a>
+						</li>
+
+					</ul>
+
+					<!--Knapp till webbformulär-->
+						<ul>
+							<li class="side">
+								<a id="webbform" class="side" href="../form/webbform.html" title="Klicka här för att komma till webbformuläret!">Kontakta mig</a>
+							</li>
+						</ul>
+						
+				</div>
+				<!--Slut på sidnavigation-->
+
+				<div id="content">
+
+					<div class="content_area">
+
+						<!--Rubrik på nivå 2. -->
+						<h2> CSS </h2>
+
+						<!--Vanlig text. -->
+						<p>
+							CSS är en förkortning av Cascading Style Sheets vilket betyder stilmallar på svenska och introducerades för första gången 1994 genom webbläsaren Argo. CSS hjälper till att hantera formeringen av innehållet på en webbsida, det vill säga det innehåll som strukturerats i HTML-dokument. Med andra ord är CSS ett språk för att beskriva hur innehållet på en sida ska presenteras för användaren. Det är möjligt för både användaren och skaparen av webbsidan att med hjälp av CSS påverka hur webbläsaren ska presentera innehållet.
+						</p>
+						
+						<p>
+							Formateringen av en webbsidas innehåll kan ske på tre sätt eller nivåer. Det kan antingen beskrivas direkt i ett element eller en tagg i HTML-koden, i ett ”style”-avsnitt i header-taggen i HTML-koden, eller i ett separat dokument för stilmallen, även kallat link-element. Skriva formeringen direkt i varje element bör undvikas eftersom det kan göra koden mycket rörig och svår att ändra om man till exempel vill byta färg på rubrikerna eftersom man behöver gå in och ändra i varje element av den typen. Även style-taggen bör man vara försiktig med att använda eftersom även den kan göra det svårt att hålla reda på all formatering, speciellt om webbplatsen består av flera sidor. 
+						</p>
+						
+						<p>
+							Det bästa är därför att samla all formatering i ett eget dokument med stillmallen. Detta gör att ändringar bara behöver göras på ett ställe i de flesta fall och det blir överskådligt att se vilka formateringar som gjorts och som påverkar olika element. Framförallt underlättar det arbetet när man har många HTML-sidor eftersom det bara behövs en stilmall till de alla.
+						</p>
+						
+						<p>
+							Stilmallen består av presentationer av olika selektorer. För varje selektor presenteras sedan olika attribut som kan ändras för att påverka formateringen och vilka värden de ska ha. Selektorer kan vara olika element som Rubrik på nivå ett (h1) eller länkar (a). Det kan även vara klasser eller unika id vilka kan ges till olika taggar i HTML-koden för att lättare gruppera och identifiera dem. Det finns även möjlighet att presentera mer komplicerade selektorer genom att kombinera element, klasser och id på olika sätt. 
+						</p>
+						
+						<p>
+							Med hjälp av CSS är det möjligt att göra formateringen mycket mer avancerad än vad som var möjligt med HTML. Dessutom kan man ha flera stilmallar för att funna presentera informationen på olika sätt beroende på vad det är för enhet som informationen ska presenteras på. Det går till exempel att ah en specifik formatering för utskrifter. Den första versionen av CSS, CSS 1, fokuserade framförallt på enkla funktioner som färg och typsnitt. Idag är det dock möjligt att använda sig av mycket mer avancerade grafiska funktioner med rörliga bilder och manipulering i realtid tack vare CSS 3. Det bör dock tilläggas att CSS 3 ännu inte är en standard som är fullt utvecklad och implementerad i alla webbläsare vilket gör att tillägg i form av olika webbkit kan behövas om man använder dessa funktioner på sin webbsida.
+						</p>
+
+					</div>
+
+				</div>
+				<!--Slut på content-->
+
+			</div>
+			<!--Slut på mittenpartiet-->
+
+			<div id="footer">
+
+				<p>
+					Skapad av: Jenny Stenslund <br>
+					Senast ändrad: 2016-09-22
+				</p>
+
+			</div>
+			
+		</div>
+
+
+	</body>

@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="sv">
+
+	<head>
+		<!--Vilken teckenkodning som används-->
+		<meta charset="utf-8">
+		<!--Namn på sidan vilken syns i webbläsaren-->
+		<title> Webbtekniker - Jennys hörna </title>
+		<!--Länk till den stilmall i css som talar om hur innehållet ska formateras och presenteras. -->
+		<link rel="stylesheet" type="text/css" href="../stil.css" />
+		<style>
+			#webbtekniker{
+				color: #D3C321;
+			}
+			#html{
+				color: #D3C321;
+			}
+		</style>
+	</head>
+
+	<!--Innehåller alla element som syns i webbläsaren. -->
+	<body>
+
+		<div id="container">
+
+			<div id="header">
+
+				<h1> Jennys hörna </h1>
+
+				<div id="top_navigation">
+
+					<!--Lista med länkar till webbsidans olika avsnitt. När man håller musen över länken visas en informerande text. -->
+					<ul>
+						<li class="top">
+							<a  id="startsida" href="../index.html" title="Klicka här för att komma till startsidan!">Startsida</a>
+						</li>
+
+						<li class="top">
+							<a id="om_mig" href="../mig/om_mig.html" title="Klicka här för att komma till information om mig!">Om mig</a>
+						</li>
+
+						<li class="top">
+							<a id="internets_historia" href="../internet/internet_born.html" title="Klicka här för att komma till Internets historia!">Internets historia</a>
+						</li>
+
+						<li class="top">
+							<a id="webbtekniker" href="webbtekniker.html" title="Klicka här för att komma till Webbtekniker!">Webbtekniker</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+			<!--Slut på header-->
+
+			<div id="middle_wrapper">
+
+				<div id="side_navigation">
+					<!--Lista med länkar till kategorins olika avsnitt. När man håller musen över länken visas en informerande text. -->
+
+					<ul>
+						<li class="side">
+							<a id="html" class="side" href="webbtekniker.html" title="Klicka här för att komma till information om HTML!">HTML</a>
+						</li>
+
+						<li class="side">
+							<a id="css" class="side" href="css.html" title="Klicka här för att komma till information om CSS!">CSS</a>
+						</li>
+
+					</ul>
+
+					<!--Knapp till webbformulär-->
+						<ul>
+							<li class="side">
+								<a id="webbform" class="side" href="../form/webbform.html" title="Klicka här för att komma till webbformuläret!">Kontakta mig</a>
+							</li>
+						</ul>
+						
+				</div>
+				<!--Slut på sidnavigation-->
+
+				<div id="content">
+
+					<div class="content_area">
+
+						<!--Rubrik på nivå 2. -->
+						<h2> HTML </h2>
+
+						<!--Vanlig text. -->
+						<p>
+							Namnet HTML är en förkortning av Hyper Text Markup Language vilket betyder att det är ett språk för att markera upp text i ett dokument, ett märkspråk. Grunden till HTML lades redan på mitten av 40-talet men det var först på mitten av 90-talet som dagens HTML skapades och spreds. Det var när hemmadatorerna för vanliga användare kom och Internet med webbläsare och World Wide Web (WWW) slog igenom som HTML växte sig stort och blev en av beståndsdelarna i grundstommen för WWW.
+						</p>
+
+						<p>
+							HTML är till för att strukturera upp innehållet på en webbsida så att det blir lättare för användaren att ta till sig innehållet och få det presenterat för sig via webbläsaren. Tidigare var det bara personer med avancerade programmeringskunskaper som hade tillgång till den information som förmedlades med hjälp av Internet. Genom HTMLs intågande blev det möjligt för näst intill alla människor att ta del av information på nätet.
+						</p>
+						
+						<p>
+							HTML-språket är uppbyggt av taggar, eller element som de även kallas. Dessa taggar delar upp innehållet i ett dokument i olika delar för att strukturera den information som ska presenteras för läsaren. På så vis blir det lättare för webbläsaren att förstå vad dokumentet innehåller och hur det ska presenteras. Varje tagg omgärdas av hakar (mindre än- och större än symboler) för att markera början och slutet på en tagg. Det finns taggar för att bland annat tala om vad som är rubrik  eller brödtext samt dela upp innehållet i olika stycken och områden. Taggarna talar om vad det är för typ av text eller annat innehåll och hjälper helt enkelt till att gruppera innehållet.
+						</p>
+						
+						<p>
+							Den typ av taggar som har kommit att känneteckna HTML är framförallt länk-taggar. Dessa gör det möjligt för användaren att gå vidare till andra webbsidor eller dokument utan att behöva ange en ny adress i webbläsarens adress-fält. Från början var tanken att de framför allt skulle underlätta för forskare att länka till andra forskares arbete som använts för den egna forskningen. På så vis var det lätt för läsaren att hitta källan till informationen samtidigt som det blev lättare att få tillgång till samt dela med sig av sina upptäckter. Länk-taggen innehåller information om adressen till den webbsida som ska visas när man klickar på länken.
+						</p>
+						
+						<p>
+							Förutom att strukturera upp text och länka till andra webbsidor används HTML till att tala om för webbläsaren vilken del av innehållet som är någon typ av media, fil eller program. Till exempel finns en speciell tagg för bilder med information om varifrån bilden ska hämtas in. 
+						</p>
+						
+						<p>
+							Från början var HTML endast tänkt att användas för att strukturera upp innehållet men i början på 2000-talet kom allt mer formatering in som en del i HTML. Det skulle gå att anpassa det grafiska utseendet med hjälp av färg, form och typsnitt för att göra det mer tilltalande för användaren att titta på. Detta gjorde dock att dokumenten blev allt mer röriga och komplicerade att utläsa. Därför återgick man till den ursprungliga tanken med att endast hantera strukturen i HTML och istället använda sig av stilmallar/CSS för formatering. CSS beskrivs närmare i ett eget avsnitt.
+						</p>
+						
+						<p>
+							Det finns standarder för hur HTML ska se ut och fungera men standardiseringen har gått långsamt jämfört med utvecklingen av språket och webbläsarna vilket har gjort att webbläsar-utvecklarna är de som drivit utvecklingen. Detta har lett till att olika webbläsare tolkar HTML-kod på olika sätt. Det har i sin tur lett till att information på en webbsida kan se olika ut beroende vilken webbläsare man använder. Standariseringsorganisationen World Wide Web Consortium arbetar dock för minska dessa skillnader genom att skapa standarder för HTML. Den senast är HTML 5 som påbörjades 2004. En viktig uppgift som organisationen ägnar sig åt är att göra det möjligt för alla människor att ta till sig informationen på webbsidor, oavsett om man har någon form av funktionsnedsättning eller ej. Därför finns det tydliga riktlinjer kring bland annat navigationsmöjligheter, ordningsföljd samt beskrivande texter som komplement till bilder.
+						</p>
+
+					</div>
+
+				</div>
+				<!--Slut på content-->
+
+			</div>
+			<!--Slut på mittenpartiet-->
+
+			<div id="footer">
+
+				<p>
+					Skapad av: Jenny Stenslund <br>
+					Senast ändrad: 2016-09-22
+				</p>
+
+			</div>
+			
+		</div>
+
+
+	</body>

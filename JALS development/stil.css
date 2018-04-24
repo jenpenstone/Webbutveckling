@@ -1,0 +1,434 @@
+/*Gemensamma egenskaper för hela sidan*/
+body{
+	font-family: 'Rubik', Helvetica, Verdana, sans-serif;
+	background-color: #B4B4B4;
+}
+
+/*Omgärdar allt innehåll på sidan*/
+#pagewrapper{
+	margin: auto;
+	margin-top: -2em;
+	background-color: #FFF;
+	max-width: 1100px;
+	box-shadow: 0.2em 0.2em 1em #E3E3E3;
+}
+
+/*Egenskaper navigation*/
+nav{
+	margin: auto;
+	max-width: 1100px;
+	overflow: auto;
+	min-height: 50px;
+	background-color: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	box-shadow: 0.2em 0.2em 1em #E3E3E3;
+}
+
+nav ul{
+	list-style: none;
+	text-align: center;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+nav li{
+	margin: 0 0.5em 0 0.5em;
+	padding: 0 0 0 0;
+	display: inline;
+}
+
+/*Top navigation knappar, gemensamma egenskaper*/
+nav a{
+	display: inline-block;
+	height: 20px;
+	padding: 7px 20px 7px 20px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	border-style: solid;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+	box-shadow: 0.2em 0.2em 0.3em #BFBFBF;
+}
+
+
+/*Egenskaper header*/
+header{
+	overflow: auto;
+	margin-top: 5em;
+	background-color: #FFF;
+	background-image: url("bilder/logga.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	height: 8em;
+	width: 100%;
+	box-shadow: 0.2em 0.2em 1em #E3E3E3;
+}
+
+/*Egenskaper article*/
+article{
+	float: left;
+	margin-left: 1.5em;
+	margin-bottom: 5em;
+	width: 70%;
+	min-height: 40em;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+/*Egenskaper section*/
+
+article section{
+	margin-bottom: 7em;
+}
+
+aside section{
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin-bottom: 2em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	box-shadow: 0.2em 0.2em 1em #4F4F4F;
+}
+
+/*Egenskaper footer*/
+footer{
+	overflow: auto;
+	width: 100%;
+	margin-left: 40%;
+	text-align: center;
+	padding-top: 2em;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+aside footer{
+	padding-top: 0;
+	padding-bottom: 2em; 
+	margin-left: 0;
+}
+
+aside{
+	float: right;
+	margin-top: 1.5em;
+	margin-right: 1.5em;
+	width: 14em;
+	min-height: 40em;
+	text-align: center;
+	background-color: #3399CC;
+	box-shadow: 0.2em 0.2em 1em #4F4F4F;
+	border-style: solid;
+	border-color: #3399CC;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+/*Egenskaper för rubriknivå 1.*/
+h1{
+	color: #4F4F4F;
+	font-size:3.5em;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.3em #BFBFBF;
+
+}
+
+/*Egenskaper för rubriknivå 2*/
+h2{
+	color:#FFF;
+	background-color: #FF5959;
+	font-family: 'Montserrat', Helvetica, Verdana, sans-serif;
+	font-weight: lighter;
+	font-size:1.4em; 
+	padding: 0.1em;
+	margin-bottom: 2em;
+	box-shadow: 0.2em 0.2em 0.3em #BFBFBF;
+	border-style: solid;
+	border-color: #FF5959;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/*Egenskaper för rubriknivå 3*/
+h3{
+	color:#3B3B3B;
+	font-size:1.5em;
+	font-family: 'Montserrat', Helvetica, Verdana, sans-serif;
+	font-weight: bold;
+	margin-top: 2em;
+}
+
+
+/*Egenskaper för rubriknivå 3*/
+h4{
+	color:#222222;
+	font-family: 'Open+Sans:600', Helvetica, Verdana, sans-serif;
+	font-size:1.2em;
+	font-weight: bold;
+}
+
+/*Egenskaper listor*/
+ul{
+	list-style-type: none;
+}
+
+aside ul{
+	width: 10em;
+	margin-bottom: 2em;
+}
+
+aside li{
+	margin-top: 2em;
+	margin-bottom: 1em;
+	color: #FFF;
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	font-family: 'Rubik', Helvetica, Verdana, sans-serif;
+}
+
+/*Egenskaper för länkar i olika situationer*/
+a:link{
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover{
+	color: #4F4F4F;
+}
+a:active{
+	color: #4F4F4F;
+}
+
+/*Egenskaper för vanliga texten*/
+p{
+	font-family: 'Open Sans', Helvetica, Verdana, sans-serif;
+	font-size:1em;
+	line-height: 1.5em;
+	text-align: justify;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+p:first-letter{
+	font-size: 150%;
+}
+
+/*Egenskaper för bilder. Marginaler för snygg placering samt storlek*/
+img{
+	width: 10em;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+
+/*Specifika egenskaper för bilder på Våra appar-sidan*/
+.vara_appar_bild{
+	float: left;
+	margin-top: -2em;
+}
+
+/*Specifika egenskaper för text på Våra appar-sidan*/
+#vara_appar_article p{
+	max-width: 30em;
+	margin-left: 15em;
+}
+
+/*Top navigation knappar, specifika egenskaper för varje knapp*/
+#startsida{
+	background-color: #3399CC;
+	border-color: #3399CC;
+}
+
+#vara_appar{
+	background-color: #99FF66;
+	border-color: #99FF66;
+}
+
+#webbshop{
+	background-color: #FFCC33;
+	border-color: #FFCC33;
+}
+
+#om_foretaget{
+	background-color: #FF5959;
+	border-color: #FF5959;
+}
+
+/*Knappar för sociala medier*/
+#facebook, #instagram{
+	background-color: transparent;
+	border-style: none;
+	background-size: 2em;
+	background-repeat: no-repeat;
+	padding-left: 3em;
+	padding-bottom: 3em;
+	box-shadow: none;
+}
+
+#facebook{
+	background-image: url(bilder/fb_icon.png);
+}
+
+#instagram{
+	background-image: url(bilder/instagram.png);
+}
+
+#till_varukorg{
+	font-size: 1.1em;
+	padding: 0.4em;
+}
+
+/*Knappar, ej top navigation*/
+.button{
+	background-color: #99FF66;
+	border-style: solid;
+	border-color: #99FF66;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px; 
+    padding: 0.5em 2em 0.5em 2em;
+    width: 9em;
+    box-shadow: 0.2em 0.2em 0.3em #70BA4A;
+    font-weight: bold;
+}
+
+/*Egenskaper för länkarna till apparna vilka återfinns på startsidan. */
+.appar{
+	border-style: solid;
+	border-color: #FFF;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/*Egenskaper för länkarna till apparna vilka återfinns på startsidan när muspekaren förs över dem. */
+.appar:hover{
+	box-shadow: 0.2em 0.2em 1em #E3E3E3;
+}
+
+/*Markering av nyhet - positionering vid rätt produkt*/
+#nyhet{
+	position: absolute;
+	top: 82em;
+	left: -10em;
+	color: #4F4F4F;
+	font-size:1.5em;
+	font-weight: bold;
+	text-shadow: 0.15em 0.15em 0.3em #BFBFBF;
+
+}
+
+#contactform, #inloggning, #payform{
+	width: 70%;
+	margin-left: 10%;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #B4B4B4;
+    padding: 20px;
+    text-align: left;
+}
+
+
+input[type=text], input[type=password], select {
+    width: 50%;
+    padding: 0.4em;
+    display: block;
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+input[type=submit] {
+    min-width: 30%;
+    background-color: #FFCC33;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+input[type=submit]:hover {
+    color: #4F4F4F;
+}
+
+/*Ruta för meddelande i kontaktformulär*/
+#message{
+	width: 100%;
+	resize: vertical;
+	opacity: 0.9;
+}
+
+/*Varje produkt i webbshopen som har en bild och text till. Anpassa storlek och placering så att flera produkter visas på varje rad. Omgärdas av en osynlig ram vilken behövs för hover-effekten.*/
+.webbshop_item{
+	width: 10em;
+	height: 10em;
+	float: left;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1em;
+	border-style: solid;
+	border-color: #FFF;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/*Varje produkt i webbshopen som har en bild och text till. När man håller musen över den syns en skuggning runt rutan. */
+.webbshop_item:hover{
+	box-shadow: 0.2em 0.2em 1em #E3E3E3;
+}
+
+/*Bild i för produkt i webbshop. */
+.webbshop_bild{
+	width: 5em;
+}
+
+/*Rubriktext till produkt i webbshop. */
+.webbshop_item h4{
+	font-size: 1em;
+	font-family: 'Open Sans', Helvetica, Verdana, sans-serif;
+}
+
+
+
+

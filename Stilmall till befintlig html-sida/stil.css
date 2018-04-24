@@ -1,0 +1,269 @@
+
+/* Egenskaper för hela webbsidans innehåll. Vilken textstil som ska användas samt bakgrundsbild för hela fönstret. */
+body{
+	font-family: 'Amatic SC', Helvetica, Verdana, sans-serif;;
+	background-image: url(green2.jpg);
+}
+
+/*Gemensamma egenskaper för rubriker. Ska centreras */
+header{
+	text-align: center;
+}
+
+/*Egenskaper för rubriknivå 1. */
+h1{
+	/*Positioneras längst fram av webbsidans innehåll och alltid synas */
+	z-index: 100;
+	/*Färg, genomsiktlighet, storlek och stil */
+	background-color: #8C8C8C;
+	opacity: 0.9;
+	color:#FFF;
+	font-size:2.5em; 
+	font-weight: bold;
+	/*Egenskaper ram */
+	border-width: 0.2em;
+	border-color: #9CFF0E;
+	border-style: solid;
+	border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; 
+	/*Avstånd och positionering */
+	padding: 0.3em 0.3em 0.3em 0.3em;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	position: fixed;
+	top: 0.1em;
+	left: 0.1em;
+	right: 0.1em;
+
+}
+
+/*Egenskaper för rubriknivå 2. */
+h2{
+	color:#E5547C;
+	font-size:2em; 
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+/* Egenskaper för artikeln/huvudinnehållet på sidan*/
+article{
+	/* Avstånd och positionering */
+	z-index: 10;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 12em;
+}
+
+/* Varje blogginlägg */
+section{
+	overflow: auto;
+	width: 100%;
+	/* Färg */
+	background-color: #505050;
+	opacity: 0.8;
+	/* Egenskaper ram*/
+	border-width: 0.2em;
+	border-color: #9CFF0E;
+	border-style: solid;
+	border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; 
+    /* Avstånd och positionering */
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+/* När musen är över blogginlägget tas en del av genomsiktilgheten bort för lättare läsning/tydlig skärpa */
+section:hover{
+	opacity: 0.95;
+}
+
+/*Egenskaper för bilder. Storlek, positionering och avstånd */
+section img{
+	width: 15%;
+	float: left;
+	margin-top: 0em;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-bottom: 2em;
+}
+
+/*Egenskaper för vanlig text i blogginlägg */
+section p{
+	color:#FFF;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	text-align: justify;
+	margin-left: 25%;
+	margin-bottom: 2em;
+	margin-right: 1em;
+}
+
+section p:first-letter{
+	font-size: 200%;
+}
+
+/*Egenskaper för länkar - ändring av färg och understreck */
+a:link{
+	color: #9CFF0E;
+	text-decoration: none;
+}
+a:visited{
+	color: #9CFF0E;
+	text-decoration: none;
+}
+a:hover{
+	color: #0978FF;
+	text-decoration: underline;
+}
+a:active{
+	color: #0978FF;
+	text-decoration: underline;
+}
+
+/* Egenskaper för sidfot */
+footer{
+	/*Färg & genomsiktlighet */
+	color:#FFF;
+	background-color: #303030;
+	opacity: 0.8;
+	/*Egenskaper ram */
+	border-width: 0.2em;
+	border-color: #9CFF0E;
+	border-style: solid;
+	border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; 
+    /*Avstånd och positionering */
+	padding: 0.3em 0.3em 0.3em 0.3em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+/* Egenskaper specifika för sidfot i blogginlägg. Ta bort ram, inga rundade hörn, annan textfärg samt andra avstånd */
+article footer{
+	border-style: none;
+	border-radius: 0px;
+	color:#3BD1BF;
+	margin-top: 2em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*Egenskaper för text runt länk */
+.linktext{
+	font-weight: bold;
+	font-size: 1.2em
+}
+
+/* Egenskaper för utskrift */
+@media print{
+	body{
+		font-family: Times, serif;
+		font-size: 12pt;
+		background-color: #FFFFFF;
+		color: #000000;
+	}
+	/*Egenskaper för rubriknivå 1. */
+	h1{
+		color:#000000;
+		font-size:25pt; 
+		font-weight: bold;
+		/*Egenskaper ram */
+		border-style: none;
+	    border-radius: 0px; 
+		/*Avstånd och positionering */
+		padding: 0.3em 0.3em 0.3em 0.3em;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		position: static;
+		top: 0.1em;
+		left: 0.1em;
+		right: 0.1em;
+
+	}
+
+	/*Egenskaper för rubriknivå 2. */
+	h2{
+		color:#000000;
+		font-size:18pt; 
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+
+	/* Egenskaper för artikeln/huvudinnehållet på sidan*/
+	article{
+		/* Avstånd och positionering */
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
+	}
+
+	/* Varje blogginlägg */
+	section{
+		/* Egenskaper ram*/
+		border-style: none;
+		border-radius: 0; 
+	    /* Avstånd och positionering */
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	/*Egenskaper för bilder. Storlek, positionering och avstånd */
+	section img{
+		width: 15%;
+		float: left;
+		margin-top: 0em;
+		margin-left: 2em;
+		margin-right: 2em;
+		margin-bottom: 2em;
+	}
+
+	/*Egenskaper för vanlig text i blogginlägg */
+	section p{
+		color:#000000;
+		line-height: 15pt;
+		text-align: justify;
+		margin-left: 25%;
+		margin-bottom: 2em;
+		margin-right: 1em;
+	}
+
+	/*Egenskaper för länkar - ändring av färg och understreck */
+	a:link{
+		color: #0978FF;
+		text-decoration: underline;
+	}
+
+	/* Egenskaper för sidfot */
+	footer{
+		/*Färg & genomsiktlighet */
+		color:#303030;
+		/*Egenskaper ram */
+		border-style: none;
+		border-radius: 0; 
+	    /*Avstånd och positionering */
+		padding: 0.3em 0.3em 0.3em 0.3em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+
+	/*Egenskaper för text runt länk */
+	.linktext{
+		font-weight: bold;
+	}
+}
+

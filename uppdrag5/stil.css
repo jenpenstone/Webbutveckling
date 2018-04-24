@@ -1,0 +1,225 @@
+
+/*Gemensam utformning för hela hemsidan. Färgen på bakgrunden i botten samt vilka textstilar som ska användas och i vilken ordning*/
+body{
+	font-family: Helvetica, Verdana, sans-serif;
+	background-image: url(pictures/lov13.jpg);
+}
+
+/*Egenskaper för rubriknivå 1. Speciell färg samt stor text med stort radavstånd*/
+h1{
+	color:#FFF;
+	font-size:2em;
+	line-height: 2.1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Egenskaper för rubriknivå 2*/
+h2{
+	color:#28450D;
+	font-size:2em; 
+	font-weight: bold;
+	margin-left: 0.3em;
+}
+
+/*Egenskaper för rubriknivå 3*/
+h3{
+	color:#000000;
+	font-size:1.5em;
+	font-weight: bold;
+	margin-left: 0.3em;
+}
+
+/*Egenskaper för listor. */
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+li{
+	text-align: center;
+	text-decoration: none;
+
+}
+
+/*Topnavigations-listan*/
+li.top{
+	float: left;
+}
+
+li.top a{
+	padding: 0.3em 2em 0.3em 2em;
+	font-size: 1.3em;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+}
+
+/*Sidonavigations-listan*/
+li.side{
+	padding-top: 2em;
+
+}
+
+li.side a{
+	padding: 0.3em 1em 0.3em 1em;
+	font-size: 1.3em;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+}
+
+/*Länken till webbformuläret*/
+#webbform{
+	margin-top: 5em;
+	margin-bottom: 10em;
+}
+
+/*Egenskaper för länkar i olika situationer*/
+a:link{
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover{
+	color: #F74F83;
+	text-decoration: underline;
+}
+a:active{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+/*Egenskaper för vanliga texten*/
+p{
+	font-size:1em;
+	line-height: 1.5em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+/*Egenskaper för bilder. Marginaler för snygg placering samt storlek*/
+img{
+	width: 20em;
+	margin: auto;
+	margin-left: 1em;
+}
+
+/*Egenskaper för input-fält i formuläret*/
+input{
+	background-color: #A3A3A3;
+}
+
+
+/*Specifika egenskaper för klassen bildtext för att de inte ska sticka ut 
+   lika mycket som övrig text samt hamna snyggt i förhållande till bilden.*/
+.bildtext{
+	color:#28450D;
+	font-size:11px;
+	margin-left: 2em;
+
+}
+
+/*Block som ska ligga i content-blocket*/
+.content_area{
+	overflow: auto;
+	background-color: #7DC03F;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+/*Innehåll i formuläret*/
+.form_text{
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+
+/*Egenskaper för sidhuvudet*/
+#header{ 
+	background-image: url(pictures/lov9.jpg); 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; 
+    position: fixed;
+    margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	top: 0.5em;
+	left: 0.5em;
+	right: 0.5em;
+	}
+
+/*Egenskaper för topp-navigationsblocket*/
+#top_navigation{
+	background-image: url(pictures/lov12.jpg);
+	width: 100%;
+	margin-left: 0;
+	/*Nedre vänstra hörnet*/
+	-moz-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -ms-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    /*Nedre högra hörnet*/
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -ms-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+
+}
+
+
+/*Egenskaper för sido-navigationsblocket*/
+#side_navigation{
+	background-color: #427322;
+	float: left;
+	width: 12em;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+#middle_wrapper{
+	z-index: -1;
+	margin-top: 12em;
+}
+
+/*Egenskaper för innehållsblocket*/
+#content{
+	margin-left: 14em;
+	margin-right: 0.5em;
+}
+
+/*Egenskaper för sidfoten. Är högerjusterad*/
+#footer{
+	background-image: url(pictures/lov9.jpg);
+	margin-top: 2em; 
+	margin-left: 14em;
+	margin-right: 0.5em;
+	z-index: -1;
+	padding: 1em 1em 1em 1em;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+
+
+
+
+
+
+
+
